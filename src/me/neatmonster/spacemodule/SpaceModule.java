@@ -185,9 +185,9 @@ public class SpaceModule extends Module {
             try {
                 final String md5 = Utilities.getMD5(artifact);
                 final int buildNumber = artifactManager.match(md5);
-                if (recommended && buildNumber != artifactManager.getRecommendedBuild() || development
+                /*if (recommended && buildNumber != artifactManager.getRecommendedBuild() || development
                         && buildNumber != artifactManager.getDevelopmentBuild())
-                    update(artifactManager, artifact, firstTime);
+                    update(artifactManager, artifact, firstTime);*/
             } catch (final Exception e) {
                 e.printStackTrace();
             }
